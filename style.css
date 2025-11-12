@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    user-select: none;
+}
+
+body {
+    background: linear-gradient(135deg, #e3f2ff, #f6f9ff, #f0f4ff);
+    background-attachment: fixed;
+}
+
+#heading {
+    position: relative;
+    left: 30px;
+    color: #26261ec5;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 8px;
+    word-spacing: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.323);
+    color: #3a3a36c9;
+    margin-top: 1rem;
+}
+
+.choice {
+    height: 190px;
+    width: 190px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.28),
+        0 8px 25px rgba(0, 0, 0, 0.22),
+        0 12px 40px rgba(0, 0, 0, 0.18);
+    transition: all 0.3s ease;
+}
+
+.choice:hover {
+    transform: translateY(-10px);
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+img:hover {
+    cursor: pointer;
+    opacity: 0.95;
+    transform: scale(1.08);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 6rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 5rem;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.323);
+    color: #0e0e0eba;
+}
+
+#user-score, #comp-score, #draw-score {
+    font-size: 4rem;
+}
+
+#msg {
+    font-size: 1rem;
+    margin-top: 3rem;
+    padding: 1rem 5rem;
+    background: #43433791;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 450;
+    letter-spacing: 4px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);      
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+#reset-btn {
+    font-size: 1.40rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
+    margin-top: 2rem;
+    background: #0055ffb1; 
+    color: white;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 2px;
+}
+
+#reset-btn:hover {
+    transform: scale(1.10);
+    background-color: #0544cc;
+}

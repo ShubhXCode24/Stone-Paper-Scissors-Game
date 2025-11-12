@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone, Paper & Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="heading">✊Stone ✋Paper  ✌️Scissors</h1>
+    <!-- CHOICES BUTTONS -->
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="images/rock.png" alt="Rock">
+        </div>
+        <div class="choice" id="paper">
+            <img src="images/paper.png" alt="Paper">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="images/scissors.png" alt="Scissors">
+        </div>
+    </div>
+
+    <!-- SCORE BOARD -->
+    <div class="score-board">
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>YOU</p>
+        </div>
+        <div class="score">
+            <p id="comp-score">0</p> 
+            <p>CPU</p>
+        </div>
+        <div class="score">
+            <p id="draw-score">0</p> 
+            <p>DRAW</p>
+        </div>
+    </div>
+    
+    <!-- RESET BUTTON -->
+    <button id="reset-btn">Reset Game</button>
+
+    <!-- MESSAGE -->
+    <div class="msg-container">
+        <p id="msg">Play Your Move</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
